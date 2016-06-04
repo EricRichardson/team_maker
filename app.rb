@@ -41,7 +41,7 @@ def teams_by_size(names, teamsize, extras = 0)
 end
 
 def teams_by_number(names, number_of_teams)
-  return "You have to choose a number of teams ;("
+  return "You have to choose a number of teams ;(" if number_of_teams == 0
   teamsize = names.size / number_of_teams
   extras = names.size % number_of_teams
   return teams_by_size(names, teamsize, extras)

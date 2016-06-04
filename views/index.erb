@@ -1,0 +1,20 @@
+<h1>Team Randomizer</h1>
+<h2>Enter a list of comma seperated names</h2>
+<div class="form">
+  <form action="/" method="post">
+    <label for="teamsize">Number</label>
+    <input type="number" name="teamsize">
+    <label for="names">Names</label>
+    <textarea name="names"></textarea>
+    <label class="inline">By Team Size</label>
+    <input type="radio" name="method" value="by_size" class="inline">
+    <label class="inline">By Team Count</label>
+    <input type="radio" name="method" value="by_teams" class="inline">
+
+    <input type="submit" class="submit" value="Make Teams">
+  </form>
+</div>
+
+<div class="display">
+  <%= @teams %>
+</div>
